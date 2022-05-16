@@ -15,7 +15,7 @@ class Listview2Screen extends StatelessWidget {
         itemCount: optios.length,
         itemBuilder: (context, i) => ListTile(
           title: Text(optios[i]),
-          trailing: const Icon(
+          trailing:   Icon(
             Icons.arrow_forward_ios_outlined,
             color: AppTheme.primary,
           ),

@@ -11,9 +11,9 @@ class CustomCardType1 extends StatelessWidget {
     return Card(
       child: Column(
         children: [
-          const ListTile(
-            title: Text('Titulo'),
-            subtitle: Text('Magna ea proident aliqua aliquip.'),
+            ListTile(
+            title: const Text('Titulo'),
+            subtitle: const Text('Magna ea proident aliqua aliquip.'),
             leading: Icon(
               Icons.padding,
               color: AppTheme.primary,
