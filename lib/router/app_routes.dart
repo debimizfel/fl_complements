@@ -10,6 +10,12 @@ class AppRoutes {
 para mostrarlas de froma rápida*/
   static final menuOptions = <MenuOption>[
     MenuOption(
+      route: 'lstview1',
+      name: 'ListView tipo 1',
+      screen: const Listview1Screen(),
+      icon: Icons.list_alt,
+    ),
+    MenuOption(
       route: 'lstview2',
       name: 'ListView tipo 2',
       screen: const Listview2Screen(),
@@ -50,6 +56,12 @@ para mostrarlas de froma rápida*/
       name: 'Slider and Checks',
       screen: const SliderScreen(),
       icon: Icons.slow_motion_video,
+    ),
+    MenuOption(
+      route: 'listviewBuilder',
+      name: 'InfiniteScroll & Pull to refresh',
+      screen: const ListViewBuilderScreen(),
+      icon: Icons.line_style,
     ),
   ];
 
