@@ -58,7 +58,8 @@ class _SliderScreenState extends State<SliderScreen> {
           const SizedBox(height: 20),
           Expanded(
             child: SingleChildScrollView(
-              child: Image(
+              child: FadeInImage(
+                placeholder: const AssetImage('assets/jar-loading.gif'),
                 image: const NetworkImage(
                   'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5563c7ec-5777-4a55-9012-3ec774d76948/d9tqcdt-b159be06-314c-47e9-9cc4-86d09395ae80.png/v1/fill/w_1024,h_1024,strp/circulo_de_rosas_azules_png_by_hitose_d9tqcdt-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzU1NjNjN2VjLTU3NzctNGE1NS05MDEyLTNlYzc3NGQ3Njk0OFwvZDl0cWNkdC1iMTU5YmUwNi0zMTRjLTQ3ZTktOWNjNC04NmQwOTM5NWFlODAucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.07yviK_v0l-hzz9LzviL5eXfzHRRn_DaqHIon6YienA',
                 ),
