@@ -39,11 +39,17 @@ para mostrarlas de froma rápida*/
       screen: const AnimatedScreen(),
       icon: Icons.play_circle_outline_rounded,
     ),
-     MenuOption(
+    MenuOption(
       route: 'iput',
       name: 'Text inputs',
       screen: const InputScreen(),
       icon: Icons.input_rounded,
+    ),
+    MenuOption(
+      route: 'slider',
+      name: 'Slider and Checks',
+      screen: const SliderScreen(),
+      icon: Icons.slow_motion_video,
     ),
   ];
 
@@ -51,7 +57,7 @@ para mostrarlas de froma rápida*/
     Map<String, Widget Function(BuildContext)> appRoutes = {};
     appRoutes.addAll({'home': ((context) => const HomeScreen())});
 
-/* Un for para pasar por el listaod de rutas y 
+/* Un for para pasar por el listado de rutas y 
    que muestre las pantallas de froma rápida.*/
     for (final option in menuOptions) {
       appRoutes.addAll({option.route: ((context) => option.screen)});
@@ -60,7 +66,7 @@ para mostrarlas de froma rápida*/
     return appRoutes;
   }
 
-//Rutas
+//Rutas: Forma 2
   // static Map<String, Widget Function(BuildContext)> routes = {
   //   'home': ((context) => const HomeScreen()),
   //   'listview2': ((context) => const Listview2Screen()),
